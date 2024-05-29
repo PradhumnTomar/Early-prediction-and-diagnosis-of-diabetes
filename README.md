@@ -193,38 +193,6 @@ e) Machine Learning Model Implementation:
 Selection of Algorithms: Various machine learning algorithms like Extra Trees, XGBoost, and 
 Gradient Boosting are implemented to build predictive models for diabetes diagnosis.
 
-Extra Trees:
-Extra Trees, short for Extremely Randomized Trees, is an ensemble learning method based on 
-decision trees. It builds multiple decision trees and combines their predictions to produce a 
-more accurate and stable prediction. Unlike traditional decision trees which choose the best 
-split at each node based on certain criteria (like Gini impurity or information gain), Extra Trees 
-randomizes the feature selection and selects the best split among a random subset of features 
-at each node. This randomness can help to reduce overfitting and increase the model's 
-robustness, especially in high-dimensional datasets.Extra Trees are computationally efficient, 
-making them suitable for large datasets.
-
-XGBoost (Extreme Gradient Boosting):
-XGBoost is a popular implementation of gradient boosting, an ensemble learning technique 
-that builds a strong predictive model by combining multiple weak models (typically decision 
-trees) sequentially.Unlike traditional gradient boosting methods, XGBoost employs a more 
-regularized model formalization to control overfitting, using techniques such as shrinkage 
-(learning rate) and feature column subsampling. It utilizes a gradient descent algorithm to 
-minimize a loss function when adding new models to the ensemble, with each new model 
-focusing on the errors made by the previous ones. XGBoost is known for its speed and 
-performance, often winning machine learning competitions and being widely adopted in 
-various domains.
-
-Gradient Boosting:
-Gradient Boosting is a generalization of boosting algorithms that combines the predictions of 
-several base estimators (typically decision trees) in a sequential manner, where each new model 
-corrects the errors made by the previous ones. It works by fitting the new model to the residuals 
-(the differences between the observed and predicted values) of the previous model, hence 
-reducing the overall error. Gradient Boosting typically involves tuning parameters such as the 
-learning rate, tree depth, and regularization parameters to achieve optimal performance and 
-prevent overfitting. While not as optimized or efficient as XGBoost, traditional gradient 
-boosting implementations still provide excellent predictive performance and are relatively 
-straightforward to interpret.
-
 Model Training: 
 Model Training: The prepared dataset is split into training and testing sets. Each algorithm is 
 trained on the training set, where it learns patterns from the data to predict whether a patient 
